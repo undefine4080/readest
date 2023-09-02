@@ -1,0 +1,121 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+@mixin shadow {
+    box-shadow: 0 0px 3px rgba(68, 68, 68, 0.584);
+}
+
+.app {
+    width: 300px;
+    background-color: #e5e5e5;
+    padding: 8px;
+
+    h1 {
+        text-align: center;
+        margin: 0;
+    }
+}
+
+.title {
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #373737;
+    margin: 0;
+}
+
+.font {
+    &__item {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        margin: 8px;
+        @include shadow;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        font-size: 20px;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 8px;
+        &:hover {
+            transform: scale(1.03);
+        }
+
+        &-checked {
+            border: 2px solid black;
+        }
+    }
+}
+
+.skin {
+    &__item {
+        height: 30px;
+        margin: 8px;
+        @include shadow;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            transform: scale(1.03);
+        }
+
+        &-checked {
+            border: 2px solid black;
+        }
+    }
+
+    &__grey {
+        background-color: #b1b1b1;
+    }
+
+    &__grass {
+        background-color: rgb(143, 187, 133);
+    }
+
+    &__butter {
+        background-color: #d9cc86;
+    }
+
+    &__dark {
+        background-color: #2d2d2d;
+    }
+}
+
+.size {
+    .app__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__item {
+        display: inline-block;
+        margin: 8px;
+        vertical-align: middle;
+        cursor: pointer;
+
+        &-checked {
+            background-color: #c65a5a;
+        }
+    }
+}
+
+.margin {
+    .app__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__item {
+        display: inline-block;
+        margin: 8px;
+        font-size: 20px;
+        vertical-align: middle;
+        cursor: pointer;
+
+        &-checked {
+            border: 2px solid black;
+        }
+    }
+}
