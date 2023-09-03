@@ -1,2 +1,2 @@
 /// <reference types="vite/client" />
-declare const chrome: any;
+/// <reference path="chrome-types/chrome.d.ts"/>
