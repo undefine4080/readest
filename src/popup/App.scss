@@ -14,7 +14,54 @@ body {
 
     h1 {
         text-align: center;
-        margin: 0;
+        margin-top: 0;
+    }
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+    &__title {
+        display: inline-block;
+        flex: 1;
+        margin-right: 10px;
+        height: 25px;
+        line-height: 25px;
+        text-overflow: ellipsis;
+        text-align: center;
+        font-weight: bold;
+        color: rgb(64, 145, 64);
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 16px;
+        border-radius: 5px;
+        border: #2d2d2d 2px dashed;
+        padding: 0 5px;
+    }
+
+    &__switch {
+        width: max-content;
+        display: inline-block;
+        overflow: hidden;
+        border: #2d2d2d 2px solid;
+        border-radius: 5px;
+
+        &-btn {
+            display: inline-block;
+            text-align: center;
+            width: 40px;
+            height: 25px;
+            line-height: 25px;
+            cursor: pointer;
+        }
+
+        &-checked {
+            background-color: #2d2d2d;
+            color: white;
+        }
     }
 }
 
